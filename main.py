@@ -53,7 +53,7 @@ for point in obstacle_points:
         u, v = projection
         if 0 <= u < image.shape[1] and 0 <= v < image.shape[0]:
             # Draw red circles for obstacles
-            cv2.circle(image, (u, v), 3, (0, 0, 255), -1)
+            cv2.circle(image, (u, v), 3, (0, 0, 255), -1) # just to test git bash
 
 # ---------- 6. Display the Result ----------
 cv2.imshow("Fused Obstacle Detection", image)
